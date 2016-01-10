@@ -4,15 +4,10 @@ May throw APIError -> (ConnectError, ServiceError)
 """
 
 import os
-
 import requests
+from json import JSONDecodeError
 
 from t411api import helpers
-
-try:
-    from simplejson.scanner import JSONDecodeError
-except (ImportError, SyntaxError):
-    from json import JSONDecodeError
 
 API_URL = 'http://api.t411.in'
 
