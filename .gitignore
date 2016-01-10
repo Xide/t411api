@@ -1,0 +1,12 @@
+# Python related stuff
+__pycache__/
+*.py[cod]
+env/
+build/
+dist/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Dev related stuff
+.idea/
