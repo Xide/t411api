@@ -3,7 +3,8 @@ try:
 except ImportError:
     from distutils.core import setup
 
-from t411api import __version__
+__version__ = '0.0.0'
+exec(open('t411api/version.py').read())
 
 setup(
         name='t411api',

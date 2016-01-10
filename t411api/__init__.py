@@ -1,4 +1,6 @@
-from t411api.API import *
+from .version import __version__
 
-__version__ = '0.1.0'
+from .API import T411API, APIError, \
+    ServiceError, ConnectError
+
 __package__ = 't411api'
