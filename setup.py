@@ -6,6 +6,9 @@ except ImportError:
 __version__ = '0.0.0'
 exec(open('t411api/version.py').read())
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setup(
         name='t411api',
         version=__version__,
@@ -18,9 +21,7 @@ setup(
         packages=['t411api'],
         zip_safe=False,
         test_suite='tests',
-        install_requires=[
-            'requests>=2.9.1'
-        ],
+        install_requires=required,
         classifiers=[
             'Development Status :: 4 - Beta',
             'Intended Audience :: Developers',
