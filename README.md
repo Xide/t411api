@@ -82,7 +82,7 @@ At the time we are writting this documentation, choices are :
 
 #### Torrent details
 
-The ```T411API.top``` method retrieve details about a torrent 
+The ```T411API.details``` method retrieve details about a torrent 
 ```python
 >>> # Retrieve details for the first 'archlinux' torrent
 >>> id = api.search('archlinux')['torrents'][0]['id']
