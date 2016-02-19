@@ -9,6 +9,11 @@
 Installation
 -------------
 
+### Compatibility
+
+> This code is developped with Python 3.5
+> However, it sould be compatible Python >= 3.3, but remains untested.
+
 ### Via pip
 
 ```sh
@@ -22,13 +27,10 @@ pip3 install git+https://git@github.com/Xide/t411api
 
 ```sh
 git clone git@github.com:Xide/t411api.git && cd t411api
-pip3 install -r requirements.txt
 python3 ./setup.py install
 ```
+
 Use this method if you want the latest (maybe less stable) updates.
-
-
-> Note: The code is not yet compatible with python2
 
 ----------
 Usage

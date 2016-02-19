@@ -3,7 +3,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-__version__ = '0.0.0'
+__version__ = '1.0.0'
 exec(open('t411api/version.py').read())
 
 setup(
@@ -25,6 +25,8 @@ setup(
             'Development Status :: 4 - Beta',
             'Intended Audience :: Developers',
             "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.3",
+            "Programming Language :: Python :: 3.4",
             "Programming Language :: Python :: 3.5",
             'Topic :: Software Development :: Libraries :: Python Modules',
             'Programming Language :: Python',
