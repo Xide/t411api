@@ -5,7 +5,6 @@ May throw APIError -> (ConnectError, ServiceError)
 
 import os
 import requests
-from json import JSONDecodeError
 
 from t411api import helpers
 
@@ -62,7 +61,7 @@ class T411API:
                                % r.status_code)
         try:
             response = r.json()
-        except JSONDecodeError:
+        except ValueError:
             raise ServiceError('Unexpected non-JSON API response : %s' % r.content)
 
         if 'token' not in response.keys():
@@ -103,7 +102,7 @@ class T411API:
         r = self._raw_query(path, params)
         try:
             response = r.json()
-        except JSONDecodeError as e:
+        except ValueError as e:
             raise ServiceError('Unexpected non-JSON response from T411: %s'
                                % r.content if r else 'response is None')
 
