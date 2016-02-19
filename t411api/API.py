@@ -13,7 +13,7 @@ API_URL = 'http://api.t411.in'
 
 class APIError(Exception):
     """
-    Exception thrown upon an unknow API error
+    Exception thrown upon an unknown API error
     Base class for every API exceptions
     """
     pass
@@ -117,16 +117,7 @@ class T411API:
         """
         Return details of the torrent
         :param torrent_id: id of the torrent (can be found with search)
-        :return: JSON  sample: {
-            "id":123,
-            "name":"Very scary movie",
-            "rewriteName":"very-scary-movie",
-            "category":12,
-            "categoryName":"Movie",
-            "terms":{
-                "video quality":"1080p"
-            }
-        }
+        :return:
         """
         return self._query('/torrents/details/%d' % torrent_id)
 
