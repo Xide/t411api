@@ -12,7 +12,7 @@ Installation
 ### Compatibility
 
 > This code is developped with Python 3.5
-> However, it sould be compatible Python >= 3.3, but remains untested.
+> It sould however be compatible with Python >= 3.2
 
 ### Via pip
 

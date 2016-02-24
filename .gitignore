@@ -10,3 +10,5 @@ pip-delete-this-directory.txt
 
 # Dev related stuff
 .idea/
+*~
+*\#*
