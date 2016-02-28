@@ -70,7 +70,7 @@ the ```T411api.search``` function provide search functionnality.
 
 To fetch T411 tops, you can use the ```T411API.top``` method.
 The only parameter of the method is a string containing the name of the top you need.
-For more details about the API parameters, you can visit http://api.t411.in/.
+For more details about the API parameters, you can visit http://api.t411.ch/.
 At the time we are writting this documentation, choices are :
 
 -  100
@@ -145,7 +145,7 @@ FAQ
 -------------
 
 Getting a ```ServiceError```:
-> This error is usually used when T411 is unreachable or encounter an unknown problem, check for [API status](http://www.websitedown.info/api.t411.in)
+> This error is usually used when T411 is unreachable or encounter an unknown problem, check for [API status](http://www.websitedown.info/api.t411.ch)
 > If this service is up, please contact a project developer
 
 Getting an import error:
