@@ -8,7 +8,7 @@ import requests
 
 from t411api import helpers
 
-API_URL = 'http://api.t411.ch'
+API_URL = 'http://api.t411.li'
 
 
 class APIError(Exception):
