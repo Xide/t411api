@@ -8,7 +8,7 @@ import requests
 
 from t411api import helpers
 
-API_URL = 'http://api.t411.li'
+API_URL = 'https://api.t411.li'
 
 
 class APIError(Exception):
@@ -35,7 +35,8 @@ class ServiceError(APIError):
 
 
 class T411API:
-    def __init__(self):
+    def __init__(self, endpoint=API_URL):
+        self.endpoint = endpoint
         self.token = None
         self.uid = None
 
@@ -48,7 +49,7 @@ class T411API:
         :return: Nothing
         """
         try:
-            r = requests.post(API_URL + '/auth', data={
+            r = requests.post(self.endpoint + '/auth', data={
                 'username': username,
                 'password': password,
             })
@@ -84,7 +85,7 @@ class T411API:
         if not params:
             params = {}
 
-        r = requests.get(API_URL + path, params,
+        r = requests.get(self.endpoint + path, params,
                          headers={'Authorization': self.token})
 
         if r.status_code != 200:
