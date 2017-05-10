@@ -41,7 +41,7 @@ API functions ( excepted ```connect``` will return a dictionnary containing the 
 
 #### Connection
 
-The default API endpoint is ```https://api.t411.ai```, it can be customized by passing the endpoint parameter to T411API's constructor as seen bellow.
+The default API endpoint is ```https://api.t411.al```, it can be customized by passing the endpoint parameter to T411API's constructor as seen bellow.
 
 The T411 api only support plain-text authentication, the ```connect``` method will allow you to retreive your token ( mandatory to use the API ).
 
@@ -49,7 +49,7 @@ The T411 api only support plain-text authentication, the ```connect``` method wi
 >>> import t411api
 >>> api = t411api.T411API()
 >>> # or
->>> # api = t411api.T411API(endpoint='https://api.t411.ai')
+>>> # api = t411api.T411API(endpoint='https://api.t411.al')
 >>> api.connect('username', 'password')
 ```
 
@@ -73,7 +73,7 @@ the ```T411API.search``` function provide search functionnality.
 
 To fetch T411 tops, you can use the ```T411API.top``` method.
 The only parameter of the method is a string containing the name of the top you need.
-For more details about the API parameters, you can visit https://api.t411.ai.
+For more details about the API parameters, you can visit https://api.t411.al.
 At the time we are writing this documentation, choices are :
 
 - 100
@@ -96,7 +96,7 @@ The ```T411API.details``` method retrieve details about a torrent
 
 #### Downloading torrents
 
-The ```T411API.download``` handle torrent downloading.
+The ```T411API.download``` method handle torrent downloading.
 She receive up to 3 parameters:
 
 1. torrent_id: mandatory, the ID of the torrent you want to download
@@ -148,7 +148,7 @@ FAQ
 -------------
 
 Getting a ```ServiceError```:
-> This error is usually used when T411 is unreachable or encounter an unknown problem, check for [API status](http://www.downforeveryoneorjustme.com/api.t411.ai)
+> This error is usually used when T411 is unreachable or encounter an unknown problem, check for [API status](http://www.downforeveryoneorjustme.com/api.t411.al)
 > If this service is up, please contact a project developer
 
 Getting an import error:
